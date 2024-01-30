@@ -1,6 +1,8 @@
 # EtherSeed
 #### - Final Year Project -
 
+🚧 Work in progress 🚧
+
 ## How It Works
 - **Project Creation:**
   
