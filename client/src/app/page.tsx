@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ConnectButton } from "thirdweb/react";
-import thirdwebIcon from "@public/thirdweb.svg";
+import etherIcon from "@public/thirdweb.svg";
 import { client } from "./client";
 
 export default function Home() {
@@ -13,8 +13,8 @@ export default function Home() {
           <ConnectButton
             client={client}
             appMetadata={{
-              name: "Example App",
-              url: "https://example.com",
+              name: "EtherSeed | Decentralised Crowdfunding",
+              url: "https://etherseed.vercel.app",
             }}
           />
         </div>
@@ -29,7 +29,7 @@ function Header() {
   return (
     <header className="flex flex-col items-center mb-20 md:mb-20">
       <Image
-        src={thirdwebIcon}
+        src={etherIcon}
         alt=""
         className="size-[150px] md:size-[150px]"
         style={{
@@ -37,10 +37,11 @@ function Header() {
         }}
       />
 
-      <h1 className="text-2xl md:text-6xl font-semibold md:font-bold tracking-tighter mb-6 text-zinc-100">
-        thirdweb SDK
-        <span className="text-zinc-300 inline-block mx-1"> + </span>
-        <span className="inline-block -skew-x-6 text-blue-500"> Next.js </span>
+      <h1 className="text-4xl md:text-8xl font-bold md:font-extrabold tracking-tighter mb-4 text-zinc-100">
+        EtherSeed
+      </h1>
+      <h1 className="text-lg md:text-4xl font-medium md:font-semibold tracking-tighter inline-block -skew-x-6 mb-4 text-blue-500">
+        The Future of Crowdfunding...
       </h1>
 
       <p className="text-zinc-300 text-base">
@@ -58,21 +59,21 @@ function ThirdwebResources() {
   return (
     <div className="grid gap-4 lg:grid-cols-3 justify-center">
       <ArticleCard
-        title="thirdweb SDK Docs"
-        href="https://portal.thirdweb.com/typescript/v5"
-        description="thirdweb TypeScript SDK documentation"
+        title="Getting Started with EtherSeed"
+        href=""
+        description=""
       />
 
       <ArticleCard
-        title="Components and Hooks"
-        href="https://portal.thirdweb.com/typescript/v5/react"
-        description="Learn about the thirdweb React components and hooks in thirdweb SDK"
+        title="EtherSeed Documentation"
+        href=""
+        description=""
       />
 
       <ArticleCard
-        title="thirdweb Dashboard"
-        href="https://thirdweb.com/dashboard"
-        description="Deploy, configure, and manage your smart contracts from the dashboard."
+        title="EtherSeed GitHub Repository"
+        href=""
+        description=""
       />
     </div>
   );
